@@ -1,0 +1,18 @@
+
+<ul class="releases">
+    {% for key, val in albums %}
+        <li class="item-release">
+
+                <div class="images"><img src="{{ val.images.0.url }}" height="100" width="100"></div>
+
+                <strong class="nombre">{{ val.name }}</strong>
+
+                <div class="artist">
+
+                        {% for key, artist in val.artists %}
+                            <a href="artista/{{ artist.id }}">  {{ artist.name }}</a>
+                        {% endfor %}
+                </div>
+        </li>
+    {% endfor %}
+</ul>

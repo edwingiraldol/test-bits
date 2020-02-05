@@ -1,0 +1,51 @@
+.path-lanzamientos .releases{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    list-style:none
+}
+
+.path-lanzamientos .releases .item-release{
+    border: solid;
+    margin: 10px;
+    padding: 10px;
+    width: 28%;
+    text-align: center;
+}
+.path-lanzamientos .releases .item-release .artist a{
+    margin: 5px 2px;
+    padding: 5px 20px;
+    background: #0071b3;
+    color: white;
+    border-radius: 20%;
+    font-size: 9px;
+}
+
+.path-artista .profile .image img {
+    border: solid;
+    border-radius: 50%;
+    border-color: white;
+}
+
+.path-artista .profile {
+    display: flex;
+    padding: 25px;
+}
+.path-artista .profile h1 {
+    color: white;
+    font-size: 30px;
+    margin-left: 26px;
+}
+.path-artista .artist {
+    background: black;
+    color: white;
+}
+
+.path-artista .albums {
+    margin: 26px;
+}
+
+.path-artista .albums table th{
+    border: none;
+}
+

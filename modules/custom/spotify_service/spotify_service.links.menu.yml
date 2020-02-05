@@ -1,0 +1,12 @@
+spotify_service.admin_config_spotify:
+  title: 'spotify config'
+  description: 'administer spotify'
+  parent: system.admin_config
+  route_name: spotify_service.settings
+  base_route: spotify_service.settings
+
+spotify_service.settings:
+  title: 'Admin spotify'
+  description: 'admin spotify'
+  parent: spotify_service.admin_config_spotify
+  route_name: spotify_service.settings

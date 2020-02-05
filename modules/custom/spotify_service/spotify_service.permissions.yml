@@ -1,0 +1,4 @@
+administer spotify:
+  title: 'Administer spotify'
+  description: 'Admin spotify functions'
+  restrict access: true

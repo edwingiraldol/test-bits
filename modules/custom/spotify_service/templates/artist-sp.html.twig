@@ -1,0 +1,24 @@
+<div class="artist">
+
+    <div class="profile">
+        <div class="image"><img src="{{ artist.images.0.url }}" height="200" width="200"></div>
+        <h1 class="name">{{ artist.name }}</h1>
+    </div>
+
+    <div class="albums">
+        <table>
+            <tr>
+                <th>Foto</th>
+                <th>Album</th>
+                <th>Canción</th>
+            </tr>
+            {% for key, val in albums %}
+                <tr>
+                    <th><img src="{{ val.image }}" height="50" width="50"></th>
+                    <th>{{ val.name }}</th>
+                    <th>{{ val.song }}</th>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>

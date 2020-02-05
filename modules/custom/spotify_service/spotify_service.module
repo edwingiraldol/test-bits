@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function spotify_service_theme()
+{
+    return [
+
+        'reder_sp' => [
+            'variables' => [
+                'albums' => NULL,
+            ],
+            'template' => 'reder-sp'
+        ],
+        'artist_sp' => [
+            'variables' => [
+            'artist' => NULL,
+            'albums' => NULL,
+            ],
+            'template' => 'artist-sp'
+        ]
+    ];
+}
